@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "604946582586",
+    "project_id": "couple-diary-76020",
+    "storage_bucket": "couple-diary-76020.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:604946582586:android:6eaac012bea08d349d3903",
+        "android_client_info": {
+          "package_name": "com.example.couple_diary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB1PJunHub2ptsSHB8s1peW5PwDFSOa22k"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
