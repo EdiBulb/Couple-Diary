@@ -10,6 +10,8 @@ plugins {
     id("kotlin-android")
     // THis integrates Flutter's build process with Android gradle system.
     id("dev.flutter.flutter-gradle-plugin")
+
+    id("com.google.gms.google-services")   // Add this
 }
 
 /// android block
@@ -17,7 +19,7 @@ android {
     // namespace is to define the package used at compile time for generated code(like resource R classes)
     namespace = "com.example.couple_diary"
     // Specifies the API level of the Android SDK you're compiling against
-    compileSdk = 33
+    compileSdk = 35 // changed from 33 to 35
 
     // Defines the Java language versions for compilation.
     compileOptions {
@@ -39,7 +41,7 @@ android {
         // minSdk=23 means devices with API<23 cannot install your app.
         minSdk = 23
         // The API level you've tested your app for.
-        targetSdk = 33
+        targetSdk = 35 // changed from 33 to 35
         // An integer that the play store uses to differentiate versions. you must increment this for every release.
         versionCode = 1           // <-- Hardcoded integer
         // A human-readable string displayed to users.

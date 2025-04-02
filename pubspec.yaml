@@ -1,32 +1,21 @@
+# Harry is Learning:
+# In Flutter or Dart project, the pubspec.yaml file is a configuration and manifest file that
+# tells the Flutter (or Dart) toolchain about your project's.
+
 name: couple_diary
 description: "A new Flutter project."
 # The following line prevents the package from being accidentally published to
 # pub.dev using `flutter pub publish`. This is preferred for private packages.
 publish_to: 'none' # Remove this line if you wish to publish to pub.dev
 
-# The following defines the version and build number for your application.
-# A version number is three numbers separated by dots, like 1.2.43
-# followed by an optional build number separated by a +.
-# Both the version and the builder number may be overridden in flutter
-# build by specifying --build-name and --build-number, respectively.
-# In Android, build-name is used as versionName while build-number used as versionCode.
-# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
-# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
-# Read more about iOS versioning at
-# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
-# In Windows, build-name is used as the major, minor, and patch parts
-# of the product and file versions while build-number is used as the build suffix.
+# Your app’s version name and build number.
 version: 1.0.0+1
 
+# Dart SDK constraints your project supports
 environment:
   sdk: ^3.7.0
 
-# Dependencies specify other packages that your package needs in order to work.
-# To automatically upgrade your package dependencies to the latest versions
-# consider running `flutter pub upgrade --major-versions`. Alternatively,
-# dependencies can be manually updated by changing the version numbers below to
-# the latest version available on pub.dev. To see which dependencies have newer
-# versions available, run `flutter pub outdated`.
+# The libraries (Including Firebase) used in your production code.
 dependencies:
   flutter:
     sdk: flutter
@@ -36,13 +25,13 @@ dependencies:
   cupertino_icons: ^1.0.8
 
   # Firebase Packages
-  firebase_core: any
-  cloud_firestore: any
-  firebase_auth: any
-  firebase_storage: any
+  firebase_core: any # the base plugin that initizlizes Firebase
+  cloud_firestore: any # if you need a real-time database.
+  firebase_auth: any # if you need user authentication
+  firebase_storage: any #
   firebase_messaging: any
 
-
+# Tools for testing, linting, etc. not shipped in release.
 dev_dependencies:
   flutter_test:
     sdk: flutter
