@@ -4,6 +4,7 @@ import 'package:firebase_auth/firebase_auth.dart' show User;
 import 'package:firebase_auth/firebase_auth.dart';
 import 'sign_in_screen.dart';
 import 'diary_screen.dart';
+import 'grammar_practice.dart';
 
 
 
@@ -11,7 +12,11 @@ import 'diary_screen.dart';
 void main() async { // async means this function will do something that takes time, so it can pause and wait instead of blocking everything.
   WidgetsFlutterBinding.ensureInitialized(); // this line makes sure everyting is properly prepared, especially before using things like Firebase or Plugins.
   await Firebase.initializeApp(); // Connect your Flutter app to Firebase.
-  runApp(const MyApp()); // This launches your app and shows the UI.
+
+  // I am testing the grammar page so i need to get this code back.
+  // runApp(const MyApp()); // This launches your app and shows the UI.
+  runApp(const MaterialApp(home: GrammarPracticePage())); // temporarily.
+
 }
 
 class MyApp extends StatelessWidget {

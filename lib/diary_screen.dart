@@ -14,6 +14,8 @@ class DiaryScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text('Couple Diary'),
       ),
+
+      //StreamBuilder: A widget that listens to a stream.
       body: StreamBuilder<QuerySnapshot>(
         stream: FirebaseFirestore.instance
             .collection('diaries')
@@ -23,7 +25,7 @@ class DiaryScreen extends StatelessWidget {
             .snapshots(),
         builder: (context, snapshot) {
           // If the Firestore connection is still loading, show a spinner
-          if (!snapshot.hasData) {
+          if (!snapshot.hasData) { // snapshot.hasData: new data is here.
             return const Center(child: CircularProgressIndicator());
           }
 
